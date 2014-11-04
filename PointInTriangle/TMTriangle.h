@@ -9,6 +9,7 @@
 #import "TMPoint.h"
 
 @interface TMTriangle : NSObject
+
 @property(nonatomic,copy)TMPoint*pointA;
 @property(nonatomic,copy)TMPoint*pointB;
 @property(nonatomic,copy)TMPoint*pointC;
@@ -19,4 +20,5 @@
 @property(nonatomic,readonly)double Square;
 -(instancetype)initWithPointA:(TMPoint*)A B:(TMPoint*)B C:(TMPoint*)C;
 +(BOOL)isPoint:(TMPoint*)P InTriangle:(TMTriangle*)ABC;
+
 @end
